@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ngọc Huy — Fullstack Developer</title>
+  <meta name="description" content="Ngọc Huy — Fullstack Developer. TypeScript, React, Node.js.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1a1a1a;
+      --muted: #6b7280;
+      --card: #f6f8fa;
+      --border: #e5e7eb;
+      --accent: #2563eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --fg: #e6edf3;
+        --muted: #8b949e;
+        --card: #161b22;
+        --border: #30363d;
+        --accent: #58a6ff;
+      }
+    }
+    * { margin: 0; box-sizing: border-box; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 4rem 1.25rem;
+    }
+    header { display: flex; align-items: center; gap: 1.25rem; margin-bottom: 2.5rem; }
+    header img { width: 88px; height: 88px; border-radius: 50%; border: 1px solid var(--border); }
+    h1 { font-size: 1.6rem; }
+    .tagline { color: var(--muted); }
+    .links { margin-top: .4rem; display: flex; gap: 1rem; flex-wrap: wrap; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    h2 { font-size: 1.1rem; margin: 2rem 0 1rem; }
+    .skills { display: flex; flex-wrap: wrap; gap: .5rem; padding: 0; list-style: none; }
+    .skills li {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: .2rem .75rem;
+      font-size: .85rem;
+    }
+    .projects { display: grid; gap: 1rem; }
+    .project {
+      display: block;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      color: inherit;
+    }
+    .project:hover { border-color: var(--accent); text-decoration: none; }
+    .project strong { color: var(--accent); }
+    .project p { color: var(--muted); font-size: .9rem; margin-top: .25rem; }
+    footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="https://avatars.githubusercontent.com/u/84005725?v=4" alt="Ngọc Huy">
+    <div>
+      <h1>Ngọc Huy</h1>
+      <p class="tagline">Fullstack Developer · TypeScript / React / Node.js</p>
+      <div class="links">
+        <a href="https://github.com/huytran303">GitHub</a>
+        <a href="mailto:vitex.dev2@gmail.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <p>
+      I build web applications end to end — from React frontends to Node.js
+      backends. Currently focused on TypeScript and the MERN stack.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>TypeScript</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Node.js</li>
+      <li>Express</li>
+      <li>MongoDB</li>
+      <li>HTML / CSS</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <a class="project" href="https://github.com/huytran303/template-mern-stack">
+        <strong>template-mern-stack</strong>
+        <p>Starter template for MERN stack projects — MongoDB, Express, React, Node.js.</p>
+      </a>
+      <a class="project" href="https://github.com/huytran303/starci-shop">
+        <strong>starci-shop</strong>
+        <p>E-commerce shop built with TypeScript.</p>
+      </a>
+      <a class="project" href="https://github.com/huytran303/landing-page-ssg">
+        <strong>landing-page-ssg</strong>
+        <p>Static-site-generated landing page.</p>
+      </a>
+      <a class="project" href="https://github.com/huytran303/project-sdn">
+        <strong>project-sdn</strong>
+        <p>Server-side development project with JavaScript.</p>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Ngọc Huy · <a href="https://github.com/huytran303/huytran303.github.io">Source</a>
+  </footer>
+</body>
+</html>
