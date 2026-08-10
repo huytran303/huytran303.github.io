@@ -7,7 +7,7 @@
   <meta name="description" content="Ngọc Huy — Fullstack Developer. TypeScript, React, Node.js.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg: #0a0a14;
@@ -83,9 +83,11 @@
       image-rendering: pixelated;
     }
     h1 {
-      font-family: var(--pixel);
-      font-size: clamp(1.05rem, 4vw, 1.6rem);
-      line-height: 1.5;
+      /* VT323, not Press Start 2P: the latter has no Vietnamese glyphs (Ọ breaks) */
+      font-family: "VT323", monospace;
+      font-size: clamp(2.4rem, 8vw, 3.4rem);
+      letter-spacing: .06em;
+      line-height: 1.1;
       background: var(--gradient);
       -webkit-background-clip: text;
       background-clip: text;
